@@ -10,6 +10,8 @@
         [EnumName("SELL")]
         SELL,
         [EnumName("SELL (Ca.)")]
-        SELLCa 
+        SELLCa, 
+        [EnumName("BUY (Ca.)")]
+        BUYCa
     }
 }

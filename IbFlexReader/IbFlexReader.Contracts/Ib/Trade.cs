@@ -1,8 +1,7 @@
-﻿using System.Globalization;
-
-namespace IbFlexReader.Contracts.Ib
+﻿namespace IbFlexReader.Contracts.Ib
 {
     using System;
+    using System.Globalization;
     using IbFlexReader.Contracts.Attributes;
     using IbFlexReader.Contracts.Enums;
 

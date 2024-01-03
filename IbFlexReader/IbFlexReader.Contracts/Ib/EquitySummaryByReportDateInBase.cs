@@ -1,4 +1,7 @@
-﻿namespace IbFlexReader.Contracts.Ib
+﻿using IbFlexReader.Contracts.Enums;
+using System.Xml.Serialization;
+
+namespace IbFlexReader.Contracts.Ib
 {
     public class EquitySummaryByReportDateInBase
     {
@@ -119,12 +122,42 @@
 
         public double? TotalShort { get; set; }
 
-        public string BrokerCashComponent             { get; set; }
-        public string IpoSubscription                 { get; set; }
-        public string IpoSubscriptionLong             { get; set; }
-        public string IpoSubscriptionShort            { get; set; }
-        public string BrokerInterestAccrualsComponent { get; set; }
-        public string BondInterestAccrualsComponent   { get; set; }
-        public string BrokerFeesAccrualsComponent     { get; set; }
+        public double? BrokerCashComponent             { get; set; }
+        public double? IpoSubscription                 { get; set; }
+        public double? IpoSubscriptionLong             { get; set; }
+        public double? IpoSubscriptionShort            { get; set; }
+        public double? BrokerInterestAccrualsComponent { get; set; }
+        public double? BondInterestAccrualsComponent   { get; set; }
+        public double? BrokerFeesAccrualsComponent     { get; set; }
+
+        public double? BrokerFeesAccrualsComponentLong { get; set; }
+
+        public double? BrokerFeesAccrualsComponentShort { get; set; }
+
+        public double? PhysDel { get; set; }
+
+        public double? PhysDelLong { get; set; }
+
+        public double? PhysDelShort { get; set; }
+
+        public double? Crypto { get; set; }
+
+        public double? CryptoLong { get; set; }
+
+        public double? CryptoShort { get; set; }
+
+        public Currencies? Currency { get; set; }
+
+        public double? BrokerCashComponentLong { get; set; }
+
+        public double? BrokerCashComponentShort { get; set; }
+
+        public double? BrokerInterestAccrualsComponentLong { get; set; }
+
+        public double? BrokerInterestAccrualsComponentShort { get; set; }
+
+        public double? BondInterestAccrualsComponentLong { get; set; }
+
+        public double? BondInterestAccrualsComponentShort { get; set; }
     }
 }

@@ -2,6 +2,7 @@
 {
     using System;
     using System.Globalization;
+    using System.Xml.Serialization;
     using IbFlexReader.Contracts.Attributes;
     using IbFlexReader.Contracts.Enums;
 
@@ -77,7 +78,7 @@
             {
                 try
                 {
-                    DateTime dt        = DateTime.ParseExact($"{TradeDate}:{TradeTime}", "yyyyMMdd:HHmmss", CultureInfo.InvariantCulture);
+                    DateTime dt        = System.DateTime.ParseExact($"{TradeDate}:{TradeTime}", "yyyyMMdd:HHmmss", CultureInfo.InvariantCulture);
                     return dt;
                 }
                 catch (Exception)
@@ -189,5 +190,9 @@
         public string CommodityType { get; set; }
         public string Fineness      { get; set; }
         public string Weight        { get; set; }
+
+        public string SubCategory { get; set; }
+
+        public string DeliveringBroker { get; set; }
     }
 }

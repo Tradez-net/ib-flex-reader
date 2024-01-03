@@ -1,5 +1,9 @@
 ﻿namespace IbFlexReader.Contracts.Enums
 {
+    /// <summary>
+    /// Currencies of the world. 
+    /// </summary>
+    /// <remarks>BASE_SUMMARY is needed for CashReportCurrency. Somebody will know why</remarks>
     public enum Currencies
     {
         AFN,
@@ -7,6 +11,7 @@
         AWG,
         AUD,
         AZN,
+        BASE_SUMMARY,
         BSD,
         BBD,
         BYN,

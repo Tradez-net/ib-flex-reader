@@ -1,5 +1,6 @@
 ﻿namespace IbFlexReader.Xml.Contracts.QueryResponse
 {
+    using System;
     using System.Xml.Serialization;
 
     [XmlRoot(ElementName = "Transfer")]
@@ -133,5 +134,26 @@
 
         [XmlAttribute(AttributeName = "transactionID")]
         public string TransactionID { get; set; }
+
+        [XmlAttribute(AttributeName = "subCategory")]
+        public string SubCategory { get; set; }
+
+        [XmlAttribute(AttributeName = "deliveringBroker")]
+        public string DeliveringBroker { get; set; }
+
+        [XmlAttribute(AttributeName = "serialNumber")]
+        public string SerialNumber { get; set; }
+
+        [XmlAttribute(AttributeName = "deliveryType")]
+        public string DeliveryType { get; set; }
+
+        [XmlAttribute(AttributeName = "commodityType")]
+        public string CommodityType { get; set; }
+
+        [XmlAttribute(AttributeName = "fineness")]
+        public string Fineness { get; set; }
+
+        [XmlAttribute(AttributeName = "weight")]
+        public string Weight { get; set; }
     }
 }

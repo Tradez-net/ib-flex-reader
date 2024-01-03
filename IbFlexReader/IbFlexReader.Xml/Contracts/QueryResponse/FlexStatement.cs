@@ -8,6 +8,9 @@
         [XmlElement(ElementName = "AccountInformation")]
         public AccountInformation AccountInformation { get; set; }
 
+        [XmlElement(ElementName = "CashReport")]
+        public CashReport CashReport { get; set; }
+
         [XmlElement(ElementName = "CashTransactions")]
         public CashTransactions CashTransactions { get; set; }
 

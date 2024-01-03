@@ -7,6 +7,8 @@
     {
         public AccountInformation AccountInformation { get; set; }
 
+        public CashReport CashReport { get; set; }
+
         public CashTransactions CashTransactions { get; set; }
 
         public CFDCharges CFDCharges { get; set; }

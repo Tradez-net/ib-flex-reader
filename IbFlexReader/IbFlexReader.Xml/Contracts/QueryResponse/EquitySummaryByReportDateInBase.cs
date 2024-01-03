@@ -161,14 +161,14 @@
         [XmlAttribute(AttributeName = "fdicInsuredBankSweepAccountCashComponentShort")]
         public string FdicInsuredBankSweepAccountCashComponentShort { get; set; }
 
-        [XmlAttribute(AttributeName = "fdicInsuredAccountInterestAccrualsComponent")]
-        public string FdicInsuredAccountInterestAccrualsComponent { get; set; }
+        [XmlAttribute(AttributeName = "fdicInsuredAccountstringerestAccrualsComponent")]
+        public string FdicInsuredAccountstringerestAccrualsComponent { get; set; }
 
-        [XmlAttribute(AttributeName = "fdicInsuredAccountInterestAccrualsComponentLong")]
-        public string FdicInsuredAccountInterestAccrualsComponentLong { get; set; }
+        [XmlAttribute(AttributeName = "fdicInsuredAccountstringerestAccrualsComponentLong")]
+        public string FdicInsuredAccountstringerestAccrualsComponentLong { get; set; }
 
-        [XmlAttribute(AttributeName = "fdicInsuredAccountInterestAccrualsComponentShort")]
-        public string FdicInsuredAccountInterestAccrualsComponentShort { get; set; }
+        [XmlAttribute(AttributeName = "fdicInsuredAccountstringerestAccrualsComponentShort")]
+        public string FdicInsuredAccountstringerestAccrualsComponentShort { get; set; }
 
         [XmlAttribute(AttributeName = "total")]
         public string Total { get; set; }
@@ -191,13 +191,74 @@
         [XmlAttribute(AttributeName = "ipoSubscriptionShort")]
         public string IpoSubscriptionShort { get; set; }
 
+        [XmlAttribute(AttributeName = "brokerstringerestAccrualsComponent")]
+        public string BrokerstringerestAccrualsComponent { get; set; }
+
+        [XmlAttribute(AttributeName = "bondstringerestAccrualsComponent")]
+        public string BondstringerestAccrualsComponent { get; set; }
+
+        [XmlAttribute(AttributeName = "brokerFeesAccrualsComponent")]
+        public string BrokerFeesAccrualsComponent { get; set; }
+
+        [XmlAttribute(AttributeName = "brokerFeesAccrualsComponentLong")]
+        public string BrokerFeesAccrualsComponentLong { get; set; }
+
+        [XmlAttribute(AttributeName = "brokerFeesAccrualsComponentShort")]
+        public string BrokerFeesAccrualsComponentShort { get; set; }
+
+        [XmlAttribute(AttributeName = "physDel")]
+        public string PhysDel { get; set; }
+
+        [XmlAttribute(AttributeName = "physDelLong")]
+        public string PhysDelLong { get; set; }
+
+        [XmlAttribute(AttributeName = "physDelShort")]
+        public string PhysDelShort { get; set; }
+
+        [XmlAttribute(AttributeName = "crypto")]
+        public string Crypto { get; set; }
+
+        [XmlAttribute(AttributeName = "cryptoLong")]
+        public string CryptoLong { get; set; }
+
+        [XmlAttribute(AttributeName = "cryptoShort")]
+        public string CryptoShort { get; set; }
+
+        [XmlAttribute(AttributeName = "currency")]
+        public string Currency { get; set; }
+
+        [XmlAttribute(AttributeName = "brokerCashComponentLong")]
+        public string BrokerCashComponentLong { get; set; }
+
+        [XmlAttribute(AttributeName = "brokerCashComponentShort")]
+        public string BrokerCashComponentShort { get; set; }
+
         [XmlAttribute(AttributeName = "brokerInterestAccrualsComponent")]
         public string BrokerInterestAccrualsComponent { get; set; }
+
+        [XmlAttribute(AttributeName = "brokerInterestAccrualsComponentLong")]
+        public string BrokerInterestAccrualsComponentLong { get; set; }
+
+        [XmlAttribute(AttributeName = "brokerInterestAccrualsComponentShort")]
+        public string BrokerInterestAccrualsComponentShort { get; set; }
+
+        [XmlAttribute(AttributeName = "fdicInsuredAccountInterestAccrualsComponent")]
+        public string FdicInsuredAccountInterestAccrualsComponent { get; set; }
+
+        [XmlAttribute(AttributeName = "fdicInsuredAccountInterestAccrualsComponentLong")]
+        public string FdicInsuredAccountInterestAccrualsComponentLong { get; set; }
+
+        [XmlAttribute(AttributeName = "fdicInsuredAccountInterestAccrualsComponentShort")]
+        public string FdicInsuredAccountInterestAccrualsComponentShort { get; set; }
 
         [XmlAttribute(AttributeName = "bondInterestAccrualsComponent")]
         public string BondInterestAccrualsComponent { get; set; }
 
-        [XmlAttribute(AttributeName = "brokerFeesAccrualsComponent")]
-        public string BrokerFeesAccrualsComponent { get; set; }
+        [XmlAttribute(AttributeName = "bondInterestAccrualsComponentLong")]
+        public string BondInterestAccrualsComponentLong { get; set; }
+
+        [XmlAttribute(AttributeName = "bondInterestAccrualsComponentShort")]
+        public string BondInterestAccrualsComponentShort { get; set; }
+
     }
 }

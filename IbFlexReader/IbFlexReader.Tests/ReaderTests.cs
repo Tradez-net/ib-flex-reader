@@ -38,5 +38,23 @@
                 Assert.NotNull(fQR);
             }
         }
+
+        [Test]
+        public void GetByString2()
+        {
+            //Arrange
+            var tfh = new TestFileHelper();
+            var stringCol = tfh.ConvertXmlToString(tfh.GetXmlFiles());
+            var result = new Reader();
+            var fQR = new IbFlexReader.Contracts.FlexQueryResponse();
+
+            //Act
+
+            fQR = result.GetByString(stringCol[1]);
+            Assert.AreEqual(0, fQR.Errors.Count);
+            //Assert
+            Assert.NotNull(fQR);
+            
+        }
     }
 }

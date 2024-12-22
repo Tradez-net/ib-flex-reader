@@ -259,6 +259,5 @@
 
         [XmlAttribute(AttributeName = "bondInterestAccrualsComponentShort")]
         public string BondInterestAccrualsComponentShort { get; set; }
-
     }
 }

@@ -1,7 +1,6 @@
 ﻿namespace IbFlexReader.Contracts.Ib
 {
     using System;
-    using System.Xml.Serialization;
     using IbFlexReader.Contracts.Enums;
 
     public class CashReportCurrency

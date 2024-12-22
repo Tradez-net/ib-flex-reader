@@ -214,5 +214,28 @@
 
         [XmlAttribute(AttributeName = "whenReopened")]
         public string WhenReopened { get; set; }
+
+        // new in IB flex schema as of 2021/10
+
+        [XmlAttribute(AttributeName = "tradeDate")]
+        public string TradeDate { get; set; }
+
+        [XmlAttribute(AttributeName = "accruedInt")]
+        public string AccruedInterest { get; set; }
+
+        [XmlAttribute(AttributeName = "serialNumber")]
+        public string SerialNumber { get; set; }
+
+        [XmlAttribute(AttributeName = "deliveryType")]
+        public string DeliveryType { get; set; }
+
+        [XmlAttribute(AttributeName = "commodityType")]
+        public string CommodityType { get; set; }
+
+        [XmlAttribute(AttributeName = "fineness")]
+        public string Fineness { get; set; }
+
+        [XmlAttribute(AttributeName = "weight")]
+        public string Weight { get; set; }
     }
 }

@@ -1,8 +1,7 @@
-﻿using IbFlexReader.Contracts.Enums;
-using System.Xml.Serialization;
-
-namespace IbFlexReader.Contracts.Ib
+﻿namespace IbFlexReader.Contracts.Ib
 {
+    using IbFlexReader.Contracts.Enums;
+
     public class EquitySummaryByReportDateInBase
     {
         public string AccountId { get; set; }

@@ -191,8 +191,8 @@
         public string Fineness      { get; set; }
         public string Weight        { get; set; }
 
-        public string SubCategory { get; set; }
+        //public string SubCategory { get; set; } not seen yet
 
-        public string DeliveringBroker { get; set; }
+        //public string DeliveringBroker { get; set; }
     }
 }

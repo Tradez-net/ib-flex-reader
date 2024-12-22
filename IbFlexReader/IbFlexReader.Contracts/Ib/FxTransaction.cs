@@ -1,8 +1,5 @@
 ﻿namespace IbFlexReader.Contracts.Ib
 {
-    using System;
-    using System.Xml.Serialization;
-
     public class FxTransaction
     {
         public string AccountId           { get; set; }

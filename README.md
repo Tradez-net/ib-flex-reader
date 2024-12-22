@@ -3,11 +3,13 @@
 This library can help you with fetching flex queries from Interactive Brokers.
 Just pass Token and Query ID and wait until it has finished.
 
-[![Build Status](https://travis-ci.org/gabbersepp/ib-flex-reader.svg?branch=master)](https://travis-ci.org/gabbersepp/ib-flex-reader) [![Nuget](https://img.shields.io/nuget/v/Biehler.IbFlexReader.svg?style=popout)](https://www.nuget.org/packages/Biehler.IbFlexReader/)
+Fork of [![Nuget](https://img.shields.io/nuget/v/Biehler.IbFlexReader.svg?style=popout)](https://www.nuget.org/packages/Biehler.IbFlexReader/)
 
 ## My goals
-- Update to new xml version 
-- Implement ```EquitySummaryByReportDateInBase,  CashReportCurrency, FxTransaction, Transfer``` for getting more informations about the depot
+[x] Support .NET Framework 4.8 (~~because ExcelDNA doesn't support .NET6~~)
+[x] Update to new xml version 
+[x] Implement ```EquitySummaryByReportDateInBase,  CashReportCurrency, FxTransaction, Transfer``` for getting more informations about the depot
+[] publish new version(s) as nuget package
 
 ## Usage
 
@@ -28,13 +30,12 @@ Or pass an already downloaded file:
 ```
 
 ## Install
-`nuget install Biehler.IbFlexReader`
+For origninal Version `nuget install Biehler.IbFlexReader`
 
 ## Requirements
-It requires your application to be .NET Standard 2.0 compliant.
+It requires your application to be .NET Framework 4.8 or .NET Standard 2.0 compliant.
 
 ## IB Setup
 Please read the wiki to be informed about the required IB setup.
 
-## [Release Notes](https://github.com/gabbersepp/ib-flex-reader/releases)
 

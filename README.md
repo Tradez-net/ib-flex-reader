@@ -9,7 +9,7 @@ Fork of [![Nuget](https://img.shields.io/nuget/v/Biehler.IbFlexReader.svg?style=
 - [x] Support .NET Framework 4.8 (~~because ExcelDNA doesn't support .NET6~~)
 - [x] Update to new xml version 
 - [x] Implement ```EquitySummaryByReportDateInBase,  CashReportCurrency, FxTransaction, Transfer``` for getting more informations about the depot
-- [] publish new version(s) as nuget package
+- [ ] publish new version(s) as nuget package
 
 ## Usage
 

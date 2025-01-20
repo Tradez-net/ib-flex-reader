@@ -1,6 +1,7 @@
 ﻿namespace IbFlexReader.Contracts.Ib
 {
     using System;
+    using System.Xml.Serialization;
     using IbFlexReader.Contracts.Attributes;
     using IbFlexReader.Contracts.Enums;
 
@@ -44,7 +45,7 @@
 
         public string Issuer { get; set; }
 
-        public int? Multiplier { get; set; }
+        public double? Multiplier { get; set; }
 
         public double? Strike { get; set; }
 
@@ -82,5 +83,15 @@
         public string Fineness      { get; set; }
         public string Weight        { get; set; }
         public string LevelOfDetail { get; set; }
+
+        public string SubCategory { get; set; }
+
+        public string ActionID { get; set; }
+
+        public string Figi { get; set; }
+        public string IssuerCountryCode { get; set; }
+        public string AvailableForTradingDate { get; set; }
+        public string ExDate { get; set; }
+
     }
 }

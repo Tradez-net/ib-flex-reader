@@ -133,5 +133,16 @@
 
         [XmlAttribute(AttributeName = "levelOfDetail")]
         public string LevelOfDetail { get; set; }
+        [XmlAttribute(AttributeName = "subCategory")]
+        public string SubCategory { get; set; }
+
+        [XmlAttribute(AttributeName = "actionID")]
+        public string ActionID { get; set; }
+
+        [XmlAttribute(AttributeName = "figi")]
+        public string Figi { get; set; }
+
+        [XmlAttribute(AttributeName = "issuerCountryCode")]
+        public string IssuerCountryCode { get; set; }
     }
 }

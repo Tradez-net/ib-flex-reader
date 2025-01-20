@@ -237,5 +237,30 @@
 
         [XmlAttribute(AttributeName = "weight")]
         public string Weight { get; set; }
+
+        [XmlAttribute(AttributeName = "subCategory")]
+        public string SubCategory { get; set; }
+
+        [XmlAttribute(AttributeName = "figi")]
+        public string Figi { get; set; }
+
+        [XmlAttribute(AttributeName = "issuerCountryCode")]
+        public string IssuerCountryCode { get; set; }
+
+        [XmlAttribute(AttributeName = "rtn")]
+        public string Rtn { get; set; }
+
+        [XmlAttribute(AttributeName = "initialInvestment")]
+        public string InitialInvestment { get; set; }
+
+        [XmlAttribute(AttributeName = "relatedTradeID")]
+        public string RelatedTradeID { get; set; }
+
+        [XmlAttribute(AttributeName = "origTransactionID")]
+        public string OrigTransactionID { get; set; }
+
+        [XmlAttribute(AttributeName = "relatedTransactionID")]
+        public string RelatedTransactionID { get; set; }
+        
     }
 }

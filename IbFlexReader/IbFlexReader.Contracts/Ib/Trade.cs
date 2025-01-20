@@ -46,7 +46,7 @@
 
         public string Issuer { get; set; }
 
-        public int? Multiplier { get; set; }
+        public double? Multiplier { get; set; }
 
         public double? Strike { get; set; }
 
@@ -191,8 +191,15 @@
         public string Fineness      { get; set; }
         public string Weight        { get; set; }
 
-        //public string SubCategory { get; set; } not seen yet
-
+        public string SubCategory { get; set; }
+        public string Figi { get; set; }
+        public string IssuerCountryCode { get; set; }
+        public string Rtn { get; set; }
+        public string InitialInvestment { get; set; }
+        
         //public string DeliveringBroker { get; set; }
+        public string RelatedTradeID { get; set; }
+        public string OrigTransactionID { get; set; }
+        public string RelatedTransactionID { get; set; }
     }
 }

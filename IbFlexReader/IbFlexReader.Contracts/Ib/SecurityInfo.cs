@@ -34,7 +34,7 @@
 
         public string Issuer { get; set; }
 
-        public int? Multiplier { get; set; }
+        public double? Multiplier { get; set; }
 
         public double? Strike { get; set; }
 

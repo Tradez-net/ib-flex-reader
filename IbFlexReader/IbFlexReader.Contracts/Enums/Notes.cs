@@ -125,6 +125,8 @@
         [EnumName("U")]
         UnvestedSharesFromStockGrant = 1L << 57,
         [EnumName("D")]
-        Delisted = 1L << 58
+        Delisted = 1L << 58,
+        [EnumName("IM")]
+        IM = 1L << 59
     }
 }

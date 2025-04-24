@@ -44,7 +44,7 @@
 
         public string Issuer { get; set; }
 
-        public int? Multiplier { get; set; }
+        public double? Multiplier { get; set; }
 
         public double? Strike { get; set; }
 
@@ -89,5 +89,9 @@
         public string Fineness      { get; set; }
         public string Weight        { get; set; }
         public string LevelOfDetail { get; set; }
+        public string SubCategory { get; set; }
+        public string ActionID { get; set; }
+        public string Figi { get; set; }
+        public string IssuerCountryCode { get; set; }
     }
 }

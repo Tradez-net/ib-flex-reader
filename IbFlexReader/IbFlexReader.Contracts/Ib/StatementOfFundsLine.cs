@@ -30,7 +30,7 @@
         public string LevelOfDetail { get; set; }
         public string ListingExchange { get; set; }
         public string Model { get; set; }
-        public int? Multiplier { get; set; }
+        public double? Multiplier { get; set; }
         public string OrderID { get; set; }
         public string PrincipalAdjustFactor { get; set; }
         public PutCall? PutCall { get; set; }

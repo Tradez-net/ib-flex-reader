@@ -191,7 +191,6 @@
         public string Fineness      { get; set; }
         public string Weight        { get; set; }
 
-        public string SubCategory { get; set; }
         public string Figi { get; set; }
         public string IssuerCountryCode { get; set; }
         public string Rtn { get; set; }

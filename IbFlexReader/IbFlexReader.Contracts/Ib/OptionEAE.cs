@@ -3,7 +3,6 @@
     using System;
     using IbFlexReader.Contracts.Attributes;
     using IbFlexReader.Contracts.Enums;
-
     public class OptionEAE
     {
         public string AccountId { get; set; }
@@ -79,5 +78,23 @@
         public double? MtmPnl { get; set; }
 
         public string TradeID { get; set; }
+
+        // new attributes 2025
+
+        public string SubCategory { get; set; }
+
+        public string Figi { get; set; }
+
+        public string IssuerCountryCode { get; set; }
+
+        public string SerialNumber { get; set; }
+
+        public string DeliveryType { get; set; }
+
+        public string CommodityType { get; set; }
+
+        public string Fineness { get; set; }
+
+        public double? Weight { get; set; }
     }
 }

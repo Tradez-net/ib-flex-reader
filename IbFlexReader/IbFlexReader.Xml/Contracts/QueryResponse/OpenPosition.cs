@@ -145,5 +145,17 @@
 
         [XmlAttribute(AttributeName = "vestingDate")]
         public string VestingDate { get; set; }
+
+        // new attributes 2025
+
+        [XmlAttribute(AttributeName = "subCategory")]
+        public string SubCategory { get; set; }
+
+        [XmlAttribute(AttributeName = "figi")]
+        public string Figi { get; set; }
+
+        [XmlAttribute(AttributeName = "issuerCountryCode")]
+        public string IssuerCountryCode { get; set; }
+
     }
 }

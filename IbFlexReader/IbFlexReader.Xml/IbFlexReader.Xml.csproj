@@ -1,31 +1,32 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net48</TargetFrameworks>
-    <RunCodeAnalysis>False</RunCodeAnalysis>
-	<CodeAnalysisRuleSet>./../stylecop.ruleset</CodeAnalysisRuleSet>
-  </PropertyGroup>
-
-     <PropertyGroup Condition="'$(BuildingInsideVisualStudio)' != 'true'"> 
-   <TreatWarningsAsErrors>true</TreatWarningsAsErrors> 
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;net48</TargetFrameworks>
+		<RunCodeAnalysis>False</RunCodeAnalysis>
+		<CodeAnalysisRuleSet>./../stylecop.ruleset</CodeAnalysisRuleSet>
+		<Version>1.1.0</Version>
 	</PropertyGroup>
 
-     <ItemGroup>
-       <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
-         <PrivateAssets>all</PrivateAssets>
-         <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-       </PackageReference>
-     </ItemGroup> 
-	
-  <ItemGroup>
-    <ProjectReference Include="..\IbFlexReader.Contracts\IbFlexReader.Contracts.csproj" />
-    <ProjectReference Include="..\IbFlexReader.Utils\IbFlexReader.Utils.csproj" />
-  </ItemGroup>
+	<PropertyGroup Condition="'$(BuildingInsideVisualStudio)' != 'true'">
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <Compile Update="StringStream.cs">
-      <SubType>Code</SubType>
-    </Compile>
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\IbFlexReader.Contracts\IbFlexReader.Contracts.csproj" />
+		<ProjectReference Include="..\IbFlexReader.Utils\IbFlexReader.Utils.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="StringStream.cs">
+			<SubType>Code</SubType>
+		</Compile>
+	</ItemGroup>
 
 </Project>

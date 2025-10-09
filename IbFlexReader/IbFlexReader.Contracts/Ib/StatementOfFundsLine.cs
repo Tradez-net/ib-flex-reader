@@ -3,7 +3,6 @@
     using System;
     using IbFlexReader.Contracts.Attributes;
     using IbFlexReader.Contracts.Enums;
-
     public class StatementOfFundsLine
     {
         public string AccountId { get; set; }
@@ -53,5 +52,30 @@
         public string UnderlyingListingExchange { get; set; }
         public string UnderlyingSecurityID { get; set; }
         public string UnderlyingSymbol { get; set; }
+
+        // new attributes 2025
+
+        public long? TransactionID { get; set; }
+        public string Figi { get; set; }
+
+        public string IssuerCountryCode { get; set; }
+
+        public long? ActionID { get; set; }
+
+        public string SerialNumber { get; set; }
+
+        public string DeliveryType { get; set; }
+
+        public string CommodityType { get; set; }
+
+        public string Fineness { get; set; }
+
+        public string Weight { get; set; }
+
+        public long? RelatedTransactionID { get; set; }
+
+        public long? OrigTransactionID { get; set; }
+        public long? RelatedTradeID { get; set; }
+
     }
 }

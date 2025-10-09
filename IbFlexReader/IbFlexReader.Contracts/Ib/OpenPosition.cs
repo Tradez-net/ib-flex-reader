@@ -96,7 +96,15 @@
         public string DeliveryType  { get; set; }
         public string CommodityType { get; set; }
         public string Fineness      { get; set; }
-        public string Weight        { get; set; }
+        public double? Weight        { get; set; }
         public string VestingDate   { get; set; }
+
+        // new attributes 2025
+
+        public string SubCategory { get; set; }
+
+        public string Figi { get; set; }
+
+        public string IssuerCountryCode { get; set; }
     }
 }

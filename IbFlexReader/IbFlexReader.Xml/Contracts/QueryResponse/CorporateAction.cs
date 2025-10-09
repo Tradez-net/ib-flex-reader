@@ -127,5 +127,20 @@
 
         [XmlAttribute(AttributeName = "levelOfDetail")]
         public string LevelOfDetail { get; set; }
+
+        // new attributes 2025
+
+        [XmlAttribute(AttributeName = "subCategory")]
+        public string SubCategory { get; set; }
+
+        [XmlAttribute(AttributeName = "actionID")]
+        public string ActionID { get; set; }
+
+        [XmlAttribute(AttributeName = "figi")]
+        public string Figi { get; set; }
+
+        [XmlAttribute(AttributeName = "code")]
+        public string Code { get; set; }
+
     }
 }

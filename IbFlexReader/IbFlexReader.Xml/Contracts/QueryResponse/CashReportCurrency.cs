@@ -505,5 +505,13 @@
 
         [XmlAttribute(AttributeName = "bondInterestCom")]
         public string BondInterestCom { get; set; }
+
+        [XmlAttribute(AttributeName = "otherIncome")]
+        public string OtherIncome { get; set; }
+        [XmlAttribute(AttributeName = "otherIncomeSec")]
+        public string OtherIncomeSec { get; set; }
+        [XmlAttribute(AttributeName = "otherIncomeCom")]
+        public string OtherIncomeCom { get; set; }
+
     }
 }

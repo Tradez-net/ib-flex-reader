@@ -1,60 +1,60 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <Target DependsOnTargets="ResolveReferences" Name="CopyProjectReferencesToPackage">
-    <ItemGroup>
-      <BuildOutputInPackage Include="@(ReferenceCopyLocalPaths-&gt;WithMetadataValue('ReferenceSourceTarget', 'ProjectReference'))" />
-    </ItemGroup>
-  </Target>
+	<Target DependsOnTargets="ResolveReferences" Name="CopyProjectReferencesToPackage">
+		<ItemGroup>
+			<BuildOutputInPackage Include="@(ReferenceCopyLocalPaths-&gt;WithMetadataValue('ReferenceSourceTarget', 'ProjectReference'))" />
+		</ItemGroup>
+	</Target>
 
-  <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net48</TargetFrameworks>
-	  <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-	  <RunCodeAnalysis>False</RunCodeAnalysis>
-	  <CodeAnalysisRuleSet>./../stylecop.ruleset</CodeAnalysisRuleSet>
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;net48</TargetFrameworks>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<RunCodeAnalysis>False</RunCodeAnalysis>
+		<CodeAnalysisRuleSet>./../stylecop.ruleset</CodeAnalysisRuleSet>
 
-    <Title>Interactive Brokers Flex Query Reader</Title>
-    <Authors>Josef Biehler (gabbersepp)</Authors>
-    <Description>Easily read any flex query. Provides the whole data model.</Description>
-    <Copyright>Josef Biehler (gabbersepp)</Copyright>
-    <PackageProjectUrl>https://github.com/gabbersepp/ib-flex-reader</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/gabbersepp/ib-flex-reader</RepositoryUrl>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <IncludeSymbols>true</IncludeSymbols>
-    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <Version>2.5.2</Version>
+		<Title>Interactive Brokers Flex Query Reader</Title>
+		<Authors>Josef Biehler (gabbersepp)</Authors>
+		<Description>Easily read any flex query. Provides the whole data model.</Description>
+		<Copyright>Josef Biehler (gabbersepp)</Copyright>
+		<PackageProjectUrl>https://github.com/gabbersepp/ib-flex-reader</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/gabbersepp/ib-flex-reader</RepositoryUrl>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<Version>2.6.0</Version>
 
-    <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
-  </PropertyGroup>
+		<TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
+	</PropertyGroup>
 
-   <PropertyGroup Condition="'$(BuildingInsideVisualStudio)' != 'true'"> 
-   <TreatWarningsAsErrors>true</TreatWarningsAsErrors> 
-	</PropertyGroup> 
- 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="System.Net.Http" Version="4.3.4" />
-  </ItemGroup>
+	<PropertyGroup Condition="'$(BuildingInsideVisualStudio)' != 'true'">
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\IbFlexReader.Contracts\IbFlexReader.Contracts.csproj">
-      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
-      <IncludeAssets>IbFlexReader.Contracts.dll</IncludeAssets>
-    </ProjectReference>
-      <ProjectReference Include="..\IbFlexReader.Utils\IbFlexReader.Utils.csproj">
-        <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
-        <IncludeAssets>IbFlexReader.Utils.dll</IncludeAssets>
-      </ProjectReference>
-      <ProjectReference Include="..\IbFlexReader.Xml\IbFlexReader.Xml.csproj">
-        <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
-        <IncludeAssets>IbFlexReader.Xml.dll</IncludeAssets>
-    </ProjectReference>
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="System.Net.Http" Version="4.3.4" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\IbFlexReader.Contracts\IbFlexReader.Contracts.csproj">
+			<ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+			<IncludeAssets>IbFlexReader.Contracts.dll</IncludeAssets>
+		</ProjectReference>
+		<ProjectReference Include="..\IbFlexReader.Utils\IbFlexReader.Utils.csproj">
+			<ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+			<IncludeAssets>IbFlexReader.Utils.dll</IncludeAssets>
+		</ProjectReference>
+		<ProjectReference Include="..\IbFlexReader.Xml\IbFlexReader.Xml.csproj">
+			<ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+			<IncludeAssets>IbFlexReader.Xml.dll</IncludeAssets>
+		</ProjectReference>
+	</ItemGroup>
 
 </Project>

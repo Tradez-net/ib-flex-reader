@@ -8,6 +8,7 @@
 
 namespace IbFlexReader.Xml.Contracts.QueryResponse
 {
+    using System;
     using System.Xml.Serialization;
 
     [XmlRoot(ElementName = "AccountInformation")]
@@ -105,5 +106,10 @@ namespace IbFlexReader.Xml.Contracts.QueryResponse
 
         [XmlAttribute(AttributeName = "accountRepPhone")]
         public string AccountRepPhone { get; set; }
+
+
+
+        [XmlAttribute(AttributeName = "lastTradedDate")]
+        public string LastTradedDate { get; set; }
     }
 }

@@ -91,5 +91,46 @@
         public string UnderlyingSecurityID { get; set; }
         [XmlAttribute(AttributeName = "underlyingSymbol")]
         public string UnderlyingSymbol { get; set; }
+
+        // new attributes 2025
+
+        [XmlAttribute(AttributeName = "subCategory")]
+        public string SubCategory { get; set; }
+
+        [XmlAttribute(AttributeName = "transactionID")]
+        public string TransactionID { get; set; }
+
+        [XmlAttribute(AttributeName = "figi")]
+        public string Figi { get; set; }
+
+        [XmlAttribute(AttributeName = "issuerCountryCode")]
+        public string IssuerCountryCode { get; set; }
+
+        [XmlAttribute(AttributeName = "actionID")]
+        public string ActionID { get; set; }
+
+        [XmlAttribute(AttributeName = "serialNumber")]
+        public string SerialNumber { get; set; }
+
+        [XmlAttribute(AttributeName = "deliveryType")]
+        public string DeliveryType { get; set; }
+
+        [XmlAttribute(AttributeName = "commodityType")]
+        public string CommodityType { get; set; }
+
+        [XmlAttribute(AttributeName = "fineness")]
+        public string Fineness { get; set; }
+
+        [XmlAttribute(AttributeName = "weight")]
+        public string Weight { get; set; }
+
+        [XmlAttribute(AttributeName = "relatedTransactionID")]
+        public string RelatedTransactionID { get; set; }
+
+        [XmlAttribute(AttributeName = "relatedTradeID")]
+        public string RelatedTradeID { get; set; }
+
+        [XmlAttribute(AttributeName = "origTransactionID")]
+        public string OrigTransactionID { get; set; }
     }
 }

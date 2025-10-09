@@ -239,8 +239,8 @@
         [XmlAttribute(AttributeName = "weight")]
         public string Weight { get; set; }
 
-        [XmlAttribute(AttributeName = "subCategory")]
-        public string SubCategory { get; set; }
+        /*[XmlAttribute(AttributeName = "subCategory")]
+        public string SubCategory { get; set; }*/
 
         [XmlAttribute(AttributeName = "figi")]
         public string Figi { get; set; }

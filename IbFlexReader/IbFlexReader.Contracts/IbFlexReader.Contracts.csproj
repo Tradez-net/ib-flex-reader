@@ -1,22 +1,23 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net48</TargetFrameworks>
-    <RootNamespace>IbFlexReader.Contracts</RootNamespace>
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;net48</TargetFrameworks>
+		<RootNamespace>IbFlexReader.Contracts</RootNamespace>
 		<RunCodeAnalysis>False</RunCodeAnalysis>
-	<CodeAnalysisRuleSet>./../stylecop.ruleset</CodeAnalysisRuleSet>
-  </PropertyGroup>
+		<CodeAnalysisRuleSet>./../stylecop.ruleset</CodeAnalysisRuleSet>
+		<Version>1.1.0</Version>
+	</PropertyGroup>
 
-     <PropertyGroup Condition="'$(BuildingInsideVisualStudio)' != 'true'"> 
-   <TreatWarningsAsErrors>true</TreatWarningsAsErrors> 
-	</PropertyGroup> 
-	
-  <ItemGroup>
-    <PackageReference Include="Biehler.EnumParser" Version="1.1.0" />
-    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
+	<PropertyGroup Condition="'$(BuildingInsideVisualStudio)' != 'true'">
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Biehler.EnumParser" Version="1.1.0" />
+		<PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
 
 </Project>

@@ -336,5 +336,10 @@
         public double? BondInterestSec { get; set; }
 
         public double? BondInterestCom { get; set; }
+
+
+        public double? OtherIncome { get; set; }
+        public double? OtherIncomeSec { get; set; }
+        public double? OtherIncomeCom { get; set; }
     }
 }

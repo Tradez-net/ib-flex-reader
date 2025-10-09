@@ -11,6 +11,11 @@ Fork of [![Nuget](https://img.shields.io/nuget/v/Biehler.IbFlexReader.svg?style=
 - [x] Implement ```EquitySummaryByReportDateInBase,  CashReportCurrency, FxTransaction, Transfer``` for getting more informations about the depot
 - [ ] publish new version(s) as nuget package
 
+## TODOs
+If you want to help, here are some enhancements:
+- [ ] Creating enums for SubCategory, IssuerCountryCode, DeliveryType, CommodityType and finding all values
+
+
 ## Usage
 
 Simple call the library by passing your token and queryId:
@@ -21,11 +26,19 @@ Simple call the library by passing your token and queryId:
 	...
 ```
 
-Or pass an already downloaded file:
+Or pass an already downloaded file by filename:
 
 ```c#
 	...
-	FlexQueryResponse result = new Reader().GetByString(content);
+	FlexQueryResponse result = new Reader().GetByString(filename, new Options { UseXmlReader = true });
+	...
+```
+
+Or pass an already downloaded file as string:
+
+```c#
+	...
+	FlexQueryResponse result = new Reader().GetByString(filecontents);
 	...
 ```
 

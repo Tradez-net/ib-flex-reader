@@ -156,6 +156,5 @@
 
         [XmlAttribute(AttributeName = "issuerCountryCode")]
         public string IssuerCountryCode { get; set; }
-
     }
 }

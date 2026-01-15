@@ -337,9 +337,77 @@
 
         public double? BondInterestCom { get; set; }
 
-
         public double? OtherIncome { get; set; }
         public double? OtherIncomeSec { get; set; }
         public double? OtherIncomeCom { get; set; }
+
+        public double? BillableCommissionsMtd { get; set; }
+        public double? BillableCommissionsYtd { get; set; }
+        public double? DepositWithdrawalsMtd { get; set; }
+        public double? DepositWithdrawalsYtd { get; set; }
+        public double? DepositsMtd { get; set; }
+        public double? DepositsYtd { get; set; }
+        public double? WithdrawalsMtd { get; set; }
+        public double? WithdrawalsYtd { get; set; }
+        public double? CarbonCreditsMtd { get; set; }
+        public double? CarbonCreditsYtd { get; set; }
+        public double? DonationsMtd { get; set; }
+        public double? DonationsYtd { get; set; }
+        public double? AccountTransfersMtd { get; set; }
+        public double? AccountTransfersYtd { get; set; }
+        public double? InternalTransfersMtd { get; set; }
+        public double? InternalTransfersYtd { get; set; }
+        public double? PaxosTransfersMtd { get; set; }
+        public double? PaxosTransfersYtd { get; set; }
+        public double? ExcessFundSweepMtd { get; set; }
+        public double? ExcessFundSweepYtd { get; set; }
+        public double? DebitCardActivityMtd { get; set; }
+        public double? DebitCardActivityYtd { get; set; }
+        public double? BillPayMtd { get; set; }
+        public double? BillPayYtd { get; set; }
+        public double? DividendsMtd { get; set; }
+        public double? DividendsYtd { get; set; }
+        public double? InsuredDepositInterestMtd { get; set; }
+        public double? InsuredDepositInterestYtd { get; set; }
+        public double? BrokerInterestMtd { get; set; }
+        public double? BrokerInterestYtd { get; set; }
+        public double? BrokerFeesMtd { get; set; }
+        public double? BrokerFeesYtd { get; set; }
+        public double? BondInterestMtd { get; set; }
+        public double? BondInterestYtd { get; set; }
+        public double? CashSettlingMtmMtd { get; set; }
+        public double? CashSettlingMtmYtd { get; set; }
+        public double? RealizedVmMtd { get; set; }
+        public double? RealizedVmYtd { get; set; }
+        public double? RealizedForexVmMtd { get; set; }
+        public double? RealizedForexVmYtd { get; set; }
+        public double? CfdChargesMtd { get; set; }
+        public double? CfdChargesYtd { get; set; }
+        public double? NetTradesSalesMtd { get; set; }
+        public double? NetTradesSalesYtd { get; set; }
+        public double? NetTradesPurchasesMtd { get; set; }
+        public double? NetTradesPurchasesYtd { get; set; }
+        public double? AdvisorFeesMtd { get; set; }
+        public double? AdvisorFeesYtd { get; set; }
+        public double? FeesReceivablesMtd { get; set; }
+        public double? FeesReceivablesYtd { get; set; }
+        public double? PaymentInLieuMtd { get; set; }
+        public double? PaymentInLieuYtd { get; set; }
+        public double? TransactionTaxMtd { get; set; }
+        public double? TransactionTaxYtd { get; set; }
+        public double? TaxReceivablesMtd { get; set; }
+        public double? TaxReceivablesYtd { get; set; }
+        public double? WithholdingTaxMtd { get; set; }
+        public double? WithholdingTaxYtd { get; set; }
+        public double? Withholding871mMtd { get; set; }
+        public double? Withholding871mYtd { get; set; }
+        public double? WithholdingCollectedTaxMtd { get; set; }
+        public double? WithholdingCollectedTaxYtd { get; set; }
+        public double? SalesTaxMtd { get; set; }
+        public double? SalesTaxYtd { get; set; }
+        public double? BillableSalesTaxMtd { get; set; }
+        public double? BillableSalesTaxYtd { get; set; }
+        public double? IpoSubscriptionMtd { get; set; }
+        public double? IpoSubscriptionYtd { get; set; }
     }
 }

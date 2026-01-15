@@ -76,6 +76,5 @@
 
         public long? OrigTransactionID { get; set; }
         public long? RelatedTradeID { get; set; }
-
     }
 }

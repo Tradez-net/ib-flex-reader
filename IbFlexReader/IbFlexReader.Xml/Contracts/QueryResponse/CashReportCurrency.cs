@@ -506,12 +506,255 @@
         [XmlAttribute(AttributeName = "bondInterestCom")]
         public string BondInterestCom { get; set; }
 
+        // added
         [XmlAttribute(AttributeName = "otherIncome")]
         public string OtherIncome { get; set; }
+
         [XmlAttribute(AttributeName = "otherIncomeSec")]
         public string OtherIncomeSec { get; set; }
+
         [XmlAttribute(AttributeName = "otherIncomeCom")]
         public string OtherIncomeCom { get; set; }
 
+        // added 15.01.2026
+        [XmlAttribute(AttributeName = "billableSalesTaxYTD")]
+        public string BillableSalesTaxYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "commissionCreditsRedemptionMTD")]
+        public string CommissionCreditsRedemptionMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "commissionCreditsRedemptionYTD")]
+        public string CommissionCreditsRedemptionYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "referralFeeMTD")]
+        public string ReferralFeeMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "referralFeeYTD")]
+        public string ReferralFeeYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "commissionsYTD")]
+        public string CommissionsYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "commissionsMTD")]
+        public string CommissionsMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "clientFeesYTD")]
+        public string ClientFeesYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "clientFeesMTD")]
+        public string ClientFeesMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "otherIncomeYTD")]
+        public string OtherIncomeYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "otherIncomeMTD")]
+        public string OtherIncomeMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "otherFeesMTD")]
+        public string OtherFeesMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "otherFeesYTD")]
+        public string OtherFeesYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "ipoSubscriptionYTD")]
+        public string IpoSubscriptionYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "ipoSubscriptionMTD")]
+        public string IpoSubscriptionMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "billableCommissionsMTD")]
+        public string BillableCommissionsMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "billableCommissionsYTD")]
+        public string BillableCommissionsYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "depositWithdrawalsMTD")]
+        public string DepositWithdrawalsMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "depositWithdrawalsYTD")]
+        public string DepositWithdrawalsYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "depositsMTD")]
+        public string DepositsMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "depositsYTD")]
+        public string DepositsYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "withdrawalsMTD")]
+        public string WithdrawalsMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "withdrawalsYTD")]
+        public string WithdrawalsYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "carbonCreditsMTD")]
+        public string CarbonCreditsMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "carbonCreditsYTD")]
+        public string CarbonCreditsYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "donationsMTD")]
+        public string DonationsMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "donationsYTD")]
+        public string DonationsYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "accountTransfersMTD")]
+        public string AccountTransfersMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "accountTransfersYTD")]
+        public string AccountTransfersYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "internalTransfersMTD")]
+        public string InternalTransfersMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "internalTransfersYTD")]
+        public string InternalTransfersYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "paxosTransfersMTD")]
+        public string PaxosTransfersMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "paxosTransfersYTD")]
+        public string PaxosTransfersYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "excessFundSweepMTD")]
+        public string ExcessFundSweepMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "excessFundSweepYTD")]
+        public string ExcessFundSweepYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "debitCardActivityMTD")]
+        public string DebitCardActivityMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "debitCardActivityYTD")]
+        public string DebitCardActivityYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "billPayMTD")]
+        public string BillPayMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "billPayYTD")]
+        public string BillPayYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "dividendsMTD")]
+        public string DividendsMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "dividendsYTD")]
+        public string DividendsYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "insuredDepositInterestMTD")]
+        public string InsuredDepositInterestMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "insuredDepositInterestYTD")]
+        public string InsuredDepositInterestYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "brokerInterestMTD")]
+        public string BrokerInterestMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "brokerInterestYTD")]
+        public string BrokerInterestYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "brokerFeesMTD")]
+        public string BrokerFeesMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "brokerFeesYTD")]
+        public string BrokerFeesYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "bondInterestMTD")]
+        public string BondInterestMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "bondInterestYTD")]
+        public string BondInterestYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "cashSettlingMtmMTD")]
+        public string CashSettlingMtmMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "cashSettlingMtmYTD")]
+        public string CashSettlingMtmYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "realizedVmMTD")]
+        public string RealizedVmMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "realizedVmYTD")]
+        public string RealizedVmYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "realizedForexVmMTD")]
+        public string RealizedForexVmMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "realizedForexVmYTD")]
+        public string RealizedForexVmYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "cfdChargesMTD")]
+        public string CfdChargesMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "cfdChargesYTD")]
+        public string CfdChargesYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "netTradesSalesMTD")]
+        public string NetTradesSalesMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "netTradesSalesYTD")]
+        public string NetTradesSalesYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "netTradesPurchasesMTD")]
+        public string NetTradesPurchasesMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "netTradesPurchasesYTD")]
+        public string NetTradesPurchasesYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "advisorFeesMTD")]
+        public string AdvisorFeesMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "advisorFeesYTD")]
+        public string AdvisorFeesYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "feesReceivablesMTD")]
+        public string FeesReceivablesMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "feesReceivablesYTD")]
+        public string FeesReceivablesYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "paymentInLieuMTD")]
+        public string PaymentInLieuMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "paymentInLieuYTD")]
+        public string PaymentInLieuYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "transactionTaxMTD")]
+        public string TransactionTaxMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "transactionTaxYTD")]
+        public string TransactionTaxYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "taxReceivablesMTD")]
+        public string TaxReceivablesMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "taxReceivablesYTD")]
+        public string TaxReceivablesYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "withholdingTaxMTD")]
+        public string WithholdingTaxMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "withholdingTaxYTD")]
+        public string WithholdingTaxYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "withholding871mMTD")]
+        public string Withholding871mMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "withholding871mYTD")]
+        public string Withholding871mYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "withholdingCollectedTaxMTD")]
+        public string WithholdingCollectedTaxMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "withholdingCollectedTaxYTD")]
+        public string WithholdingCollectedTaxYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "salesTaxMTD")]
+        public string SalesTaxMtd { get; set; }
+
+        [XmlAttribute(AttributeName = "salesTaxYTD")]
+        public string SalesTaxYtd { get; set; }
+
+        [XmlAttribute(AttributeName = "billableSalesTaxMTD")]
+        public string BillableSalesTaxMtd { get; set; }
     }
 }

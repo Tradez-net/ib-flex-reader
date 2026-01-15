@@ -68,5 +68,6 @@
 
         public FxPositions    FxPositions    { get; set; }
         public FxTransactions FxTransactions { get; set; }
+        public StockGrantActivities StockGrantActivities { get; set; }
     }
 }

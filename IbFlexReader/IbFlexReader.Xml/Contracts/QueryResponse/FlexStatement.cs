@@ -98,5 +98,8 @@
 
         [XmlElement(ElementName = "FxTransactions")]
         public FxTransactions FxTransactions { get; set; }
+
+        [XmlElement(ElementName = "StockGrantActivities")]
+        public StockGrantActivities StockGrantActivities { get; set; }
     }
 }

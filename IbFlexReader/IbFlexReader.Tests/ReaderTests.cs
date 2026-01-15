@@ -54,7 +54,6 @@
             Assert.AreEqual(0, fQR.Errors.Count);
             //Assert
             Assert.NotNull(fQR);
-            
         }
     }
 }

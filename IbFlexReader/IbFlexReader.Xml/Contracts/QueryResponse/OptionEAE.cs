@@ -138,7 +138,5 @@
 
         [XmlAttribute(AttributeName = "weight")]
         public string Weight { get; set; }
-
-
     }
 }

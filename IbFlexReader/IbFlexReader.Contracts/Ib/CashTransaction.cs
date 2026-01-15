@@ -92,6 +92,5 @@
         public string IssuerCountryCode { get; set; }
         public string AvailableForTradingDate { get; set; }
         public string ExDate { get; set; }
-
     }
 }

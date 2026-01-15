@@ -71,9 +71,7 @@
 
         public string AccountRepPhone { get; set; }
 
-
         [Format(Constants.DateFormat)]
         public DateTime? LastTradedDate { get; set; }
-
     }
 }

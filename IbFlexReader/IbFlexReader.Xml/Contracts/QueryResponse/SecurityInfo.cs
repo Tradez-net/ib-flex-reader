@@ -97,5 +97,11 @@
 
         [XmlAttribute(AttributeName = "settlementPolicyMethod")]
         public string SettlementPolicyMethod { get; set; }
+
+        [XmlAttribute(AttributeName = "figi")]
+        public string Figi { get; set; }
+
+        [XmlAttribute(AttributeName = "issuerCountryCode")]
+        public string IssuerCountryCode { get; set; }
     }
 }

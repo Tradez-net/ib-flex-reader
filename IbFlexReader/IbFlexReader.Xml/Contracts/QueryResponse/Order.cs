@@ -259,6 +259,5 @@
 
         [XmlAttribute(AttributeName = "relatedTransactionID")]
         public string RelatedTransactionID { get; set; }
-
     }
 }

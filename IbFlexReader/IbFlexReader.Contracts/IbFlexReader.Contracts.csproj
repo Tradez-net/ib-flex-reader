@@ -5,7 +5,10 @@
 		<RootNamespace>IbFlexReader.Contracts</RootNamespace>
 		<RunCodeAnalysis>False</RunCodeAnalysis>
 		<CodeAnalysisRuleSet>./../stylecop.ruleset</CodeAnalysisRuleSet>
-		<Version>1.1.0</Version>
+		<Version>1.2.0</Version>
+		<Authors>Tradez-net, gabbersepp</Authors>
+		<PackageProjectUrl>https://github.com/Tradez-net/ib-flex-reader</PackageProjectUrl>
+		<PackageLicenseUrl>https://github.com/Tradez-net/ib-flex-reader/blob/master/LICENSE</PackageLicenseUrl>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(BuildingInsideVisualStudio)' != 'true'">

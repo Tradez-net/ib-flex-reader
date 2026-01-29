@@ -38,6 +38,44 @@ https://gdcdyn.interactivebrokers.com/Universal/servlet/FlexStatementService.Get
         }
 
         [Test]
+        public void TestFlexStatementResponse_UserExample()
+        {
+            var str = @"<FlexStatementResponse timestamp='29 January, 2026 06:05 AM EST'>
+<Status>Success</Status>
+<ReferenceCode>6835514083</ReferenceCode>
+<Url>https://gdcdyn.interactivebrokers.com/Universal/servlet/FlexStatementService.GetStatement</Url>
+</FlexStatementResponse>";
+
+            var obj = Deserializer.Deserialize<XmlFlexStatementResponse, FlexStatementResponse>(sb.GenerateStream(str), out var msg, out string mappingError);
+            obj.Status.Should().Be("Success");
+            obj.ReferenceCode.Should().Be(6835514083L);
+            obj.Url.Should().Be("https://gdcdyn.interactivebrokers.com/Universal/servlet/FlexStatementService.GetStatement");
+        }
+
+        [Test]
+        public void TestTryGetFlexStatementResponse_ShouldNotThrowOnFlexQueryResponse()
+        {
+            var str = @"<FlexQueryResponse>
+  <FlexStatements>
+    <FlexStatement>
+    </FlexStatement>
+  </FlexStatements>
+</FlexQueryResponse>";
+
+            var reader = new IbFlexReader.Reader();
+            bool result = false;
+            Action act = () =>
+            {
+                var method = typeof(IbFlexReader.Reader).GetMethod("TryGetFlexStatementResponse", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                var args = new object[] { sb.GenerateStream(str), null };
+                result = (bool)method.Invoke(reader, args);
+            };
+
+            act.Should().NotThrow();
+            result.Should().BeFalse();
+        }
+
+        [Test]
         public void TestFlexStatementsEmpty()
         {
             var str = StringFactory.XmlStart + StringFactory.XmlEnd;
@@ -172,7 +210,7 @@ https://gdcdyn.interactivebrokers.com/Universal/servlet/FlexStatementService.Get
             msg.Count.Should().Be(1);
             msg[0].Message.Should().Contain("Currency");
         }
-               
+
         [Test]
         public void CashTrade()
         {

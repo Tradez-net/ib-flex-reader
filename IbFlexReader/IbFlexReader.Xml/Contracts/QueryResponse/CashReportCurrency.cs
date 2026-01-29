@@ -200,23 +200,23 @@
         [XmlAttribute(AttributeName = "dividendsCom")]
         public string DividendsCom { get; set; }
 
-        [XmlAttribute(AttributeName = "insuredDepositdoubleerest")]
-        public string InsuredDepositdoubleerest { get; set; }
+        [XmlAttribute(AttributeName = "insuredDepositInterest")]
+        public string InsuredDepositInterest { get; set; }
 
-        [XmlAttribute(AttributeName = "insuredDepositdoubleerestSec")]
-        public string InsuredDepositdoubleerestSec { get; set; }
+        [XmlAttribute(AttributeName = "insuredDepositInterestSec")]
+        public string InsuredDepositInterestSec { get; set; }
 
-        [XmlAttribute(AttributeName = "insuredDepositdoubleerestCom")]
-        public string InsuredDepositdoubleerestCom { get; set; }
+        [XmlAttribute(AttributeName = "insuredDepositInterestCom")]
+        public string InsuredDepositInterestCom { get; set; }
 
-        [XmlAttribute(AttributeName = "brokerdoubleerest")]
-        public string Brokerdoubleerest { get; set; }
+        [XmlAttribute(AttributeName = "brokerInterest")]
+        public string BrokerInterest { get; set; }
 
-        [XmlAttribute(AttributeName = "brokerdoubleerestSec")]
-        public string BrokerdoubleerestSec { get; set; }
+        [XmlAttribute(AttributeName = "brokerInterestSec")]
+        public string BrokerInterestSec { get; set; }
 
-        [XmlAttribute(AttributeName = "brokerdoubleerestCom")]
-        public string BrokerdoubleerestCom { get; set; }
+        [XmlAttribute(AttributeName = "brokerInterestCom")]
+        public string BrokerInterestCom { get; set; }
 
         [XmlAttribute(AttributeName = "brokerFees")]
         public string BrokerFees { get; set; }
@@ -227,14 +227,14 @@
         [XmlAttribute(AttributeName = "brokerFeesCom")]
         public string BrokerFeesCom { get; set; }
 
-        [XmlAttribute(AttributeName = "bonddoubleerest")]
-        public string Bonddoubleerest { get; set; }
+        [XmlAttribute(AttributeName = "bondInterest")]
+        public string BondInterest { get; set; }
 
-        [XmlAttribute(AttributeName = "bonddoubleerestSec")]
-        public string BonddoubleerestSec { get; set; }
+        [XmlAttribute(AttributeName = "bondInterestSec")]
+        public string BondInterestSec { get; set; }
 
-        [XmlAttribute(AttributeName = "bonddoubleerestCom")]
-        public string BonddoubleerestCom { get; set; }
+        [XmlAttribute(AttributeName = "bondInterestCom")]
+        public string BondInterestCom { get; set; }
 
         [XmlAttribute(AttributeName = "cashSettlingMtm")]
         public string CashSettlingMtm { get; set; }
@@ -478,33 +478,6 @@
 
         [XmlAttribute(AttributeName = "slbNetSettledCashCom")]
         public string SlbNetSettledCashCom { get; set; }
-
-        [XmlAttribute(AttributeName = "insuredDepositInterest")]
-        public string InsuredDepositInterest { get; set; }
-
-        [XmlAttribute(AttributeName = "insuredDepositInterestSec")]
-        public string InsuredDepositInterestSec { get; set; }
-
-        [XmlAttribute(AttributeName = "insuredDepositInterestCom")]
-        public string InsuredDepositInterestCom { get; set; }
-
-        [XmlAttribute(AttributeName = "brokerInterest")]
-        public string BrokerInterest { get; set; }
-
-        [XmlAttribute(AttributeName = "brokerInterestSec")]
-        public string BrokerInterestSec { get; set; }
-
-        [XmlAttribute(AttributeName = "brokerInterestCom")]
-        public string BrokerInterestCom { get; set; }
-
-        [XmlAttribute(AttributeName = "bondInterest")]
-        public string BondInterest { get; set; }
-
-        [XmlAttribute(AttributeName = "bondInterestSec")]
-        public string BondInterestSec { get; set; }
-
-        [XmlAttribute(AttributeName = "bondInterestCom")]
-        public string BondInterestCom { get; set; }
 
         // added
         [XmlAttribute(AttributeName = "otherIncome")]

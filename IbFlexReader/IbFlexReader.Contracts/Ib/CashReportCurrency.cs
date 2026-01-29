@@ -133,17 +133,17 @@
 
         public double? DividendsCom { get; set; }
 
-        public double? InsuredDepositdoubleerest { get; set; }
+        public double? InsuredDepositInterest { get; set; }
 
-        public double? InsuredDepositdoubleerestSec { get; set; }
+        public double? InsuredDepositInterestSec { get; set; }
 
-        public double? InsuredDepositdoubleerestCom { get; set; }
+        public double? InsuredDepositInterestCom { get; set; }
 
-        public double? Brokerdoubleerest { get; set; }
+        public double? BrokerInterest { get; set; }
 
-        public double? BrokerdoubleerestSec { get; set; }
+        public double? BrokerInterestSec { get; set; }
 
-        public double? BrokerdoubleerestCom { get; set; }
+        public double? BrokerInterestCom { get; set; }
 
         public double? BrokerFees { get; set; }
 
@@ -151,11 +151,11 @@
 
         public double? BrokerFeesCom { get; set; }
 
-        public double? Bonddoubleerest { get; set; }
+        public double? BondInterest { get; set; }
 
-        public double? BonddoubleerestSec { get; set; }
+        public double? BondInterestSec { get; set; }
 
-        public double? BonddoubleerestCom { get; set; }
+        public double? BondInterestCom { get; set; }
 
         public double? CashSettlingMtm { get; set; }
 
@@ -318,24 +318,6 @@
         public double? SlbNetSettledCashSec { get; set; }
 
         public double? SlbNetSettledCashCom { get; set; }
-
-        public double? InsuredDepositInterest { get; set; }
-
-        public double? InsuredDepositInterestSec { get; set; }
-
-        public double? InsuredDepositInterestCom { get; set; }
-
-        public double? BrokerInterest { get; set; }
-
-        public double? BrokerInterestSec { get; set; }
-
-        public double? BrokerInterestCom { get; set; }
-
-        public double? BondInterest { get; set; }
-
-        public double? BondInterestSec { get; set; }
-
-        public double? BondInterestCom { get; set; }
 
         public double? OtherIncome { get; set; }
         public double? OtherIncomeSec { get; set; }

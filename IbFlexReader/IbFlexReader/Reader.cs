@@ -1,4 +1,4 @@
-﻿/* 
+﻿/*
  Tool to convert xml to c# classes: https://xmltocsharp.azurewebsites.net/
  */
 
@@ -247,8 +247,16 @@ namespace IbFlexReader
 
             try
             {
-                response = Deserializer.Deserialize<XmlFlexStatementResponse, FlexStatementResponse>(stream, out var errorObjects, out string mappingError);
-                return response != null;
+                using (var reader = XmlReader.Create(stream))
+                {
+                    if (reader.MoveToContent() == XmlNodeType.Element && reader.Name == "FlexStatementResponse")
+                    {
+                        response = Deserializer.Deserialize<XmlFlexStatementResponse, FlexStatementResponse>(reader, out var errorObjects, out string mappingError);
+                        return response != null;
+                    }
+                }
+
+                return false;
             }
             catch (Exception)
             {

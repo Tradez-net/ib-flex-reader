@@ -1,54 +1,75 @@
-# Fork of ib-flex-reader
+# IbFlexReader
 
-This library can help you with fetching flex queries from Interactive Brokers.
-Just pass Token and Query ID and wait until it has finished.
+A fork of the `ib-flex-reader` library, designed to simplify fetching and parsing Flex queries from Interactive Brokers. Just provide your API Token and Query ID, and the library handles the rest.
 
-Fork of [![Nuget](https://img.shields.io/nuget/v/Biehler.IbFlexReader.svg?style=popout)](https://www.nuget.org/packages/Biehler.IbFlexReader/)
+[![Nuget](https://img.shields.io/nuget/v/TradezNet.IbFlexReader.svg?style=popout)](https://www.nuget.org/packages/TradezNet.IbFlexReader/)
 
-## My goals
-- [x] Support .NET Framework 4.8 (~~because ExcelDNA doesn't support .NET6~~)
-- [x] Update to new xml version 
-- [x] Implement ```EquitySummaryByReportDateInBase,  CashReportCurrency, FxTransaction, Transfer``` for getting more informations about the depot
-- [ ] publish new version(s) as nuget package
+## Why this fork?
 
-## TODOs
-If you want to help, here are some enhancements:
-- [ ] Creating enums for SubCategory, IssuerCountryCode, DeliveryType, CommodityType and finding all values
+This version was created to modernize the original [Biehler.IbFlexReader](https://www.nuget.org/packages/Biehler.IbFlexReader/) and publish updates to an official NuGet package under the name `TradezNet.IbFlexReader`.
 
+### Goals & Progress
+- [x] **Support .NET Framework 4.8**.
+- [x] **Support .NET Standard 2.0**.
+- [x] **Update to the latest XML schema** for Interactive Brokers Flex Queries.
+- [x] **Enhanced Data Models**: Implemented `EquitySummaryByReportDateInBase`, `CashReportCurrency`, `FxTransaction`, and `Transfer` for more detailed portfolio analysis.
+- [x] **NuGet Publication**: Available as `TradezNet.IbFlexReader`.
+
+## Migration
+
+If you are currently using `Biehler.IbFlexReader`, simply uninstall it and install the new package:
+
+```bash
+dotnet add package TradezNet.IbFlexReader
+```
 
 ## Usage
 
-Simple call the library by passing your token and queryId:
+### Fetching data via API
 
-```c#
-	...
-	FlexResult result = new Reader().GetByApi(token, queryId).Result;
-	...
+Call the library by passing your token and query ID:
+
+```csharp
+var reader = new Reader();
+FlexResult result = await reader.GetByApi(token, queryId);
 ```
 
-Or pass an already downloaded file by filename:
+### Parsing a local XML file
 
-```c#
-	...
-	FlexQueryResponse result = new Reader().GetByString(filename, new Options { UseXmlReader = true });
-	...
+You can also parse a file that has already been downloaded:
+
+```csharp
+var reader = new Reader();
+FlexQueryResponse result = reader.GetByString(filePath, new Options { UseXmlReader = true });
 ```
 
-Or pass an already downloaded file as string:
+### Parsing XML content from a string
 
-```c#
-	...
-	FlexQueryResponse result = new Reader().GetByString(filecontents);
-	...
+Or directly from a string containing the XML content:
+
+```csharp
+var reader = new Reader();
+FlexQueryResponse result = reader.GetByString(xmlContent);
 ```
 
-## Install
-For origninal Version `nuget install Biehler.IbFlexReader`
+## Installation
+
+Install via NuGet:
+
+```bash
+dotnet add package TradezNet.IbFlexReader
+```
 
 ## Requirements
-It requires your application to be .NET Framework 4.8 or .NET Standard 2.0 compliant.
+- .NET Framework 4.8 or .NET Standard 2.0.
 
-## IB Setup
-Please read the wiki to be informed about the required IB setup.
+## Contributing
+
+Future enhancements and TODOs:
+- [ ] Implement enums for `SubCategory`, `IssuerCountryCode`, `DeliveryType`, and `CommodityType` to replace raw strings.
+- [ ] Expand documentation and test coverage.
+
+Contributions are welcome!
+
 
 

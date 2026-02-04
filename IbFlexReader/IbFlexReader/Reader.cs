@@ -14,6 +14,9 @@ namespace IbFlexReader
     using IbFlexReader.Xml;
     using IbFlexReader.Xml.Contracts;
 
+    /// <summary>
+    /// Reader for Interactive Brokers FlexQueries
+    /// </summary>
     public class Reader
     {
         private readonly IStreamBuilder<string> sb;
@@ -26,9 +29,9 @@ namespace IbFlexReader
         /// <summary>
         /// Converts a string to a FlexQueryResponse.
         /// </summary>
-        /// <param name="xmlFile"></param>
-        /// <param name="options"></param>
-        /// <returns>An object with account activities</returns>
+        /// <param name="xmlFile">Path to FlexQuery file.</param>
+        /// <param name="options">Additional IbFlexReader options.</param>
+        /// <returns>An object with account activities.</returns>
         public Contracts.FlexQueryResponse GetByString(string xmlFile, Options options = null)
         {
             if (options != null)
@@ -37,7 +40,7 @@ namespace IbFlexReader
                 {
                     XmlReaderSettings settings = new XmlReaderSettings
                     {
-                        Async = true
+                        Async = true,
                     };
 
                     using (XmlReader reader = XmlReader.Create(xmlFile, settings))
@@ -56,7 +59,7 @@ namespace IbFlexReader
                 }
             }
 
-            using (var stream = sb.GenerateStream(xmlFile))
+            using (var stream = this.sb.GenerateStream(xmlFile))
             {
                 var result = Deserializer.Deserialize<Xml.Contracts.QueryResponse.FlexQueryResponse, Contracts.FlexQueryResponse>(stream, out var errorObjects, out string mappingError);
                 result = result ?? new Contracts.FlexQueryResponse();
@@ -226,7 +229,7 @@ namespace IbFlexReader
                     return new FlexResult
                     {
                         Status = "Success",
-                        ReferenceCode = response.ReferenceCode.Value.ToString()
+                        ReferenceCode = response.ReferenceCode.Value.ToString(),
                     };
                 }
                 else
@@ -235,7 +238,7 @@ namespace IbFlexReader
                     {
                         Status = response.Status,
                         ErrorCode = response.ErrorCode,
-                        ErrorMessage = response.ErrorMessage
+                        ErrorMessage = response.ErrorMessage,
                     };
                 }
             }

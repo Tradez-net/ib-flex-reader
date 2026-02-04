@@ -13,17 +13,31 @@
 		<CodeAnalysisRuleSet>./../stylecop.ruleset</CodeAnalysisRuleSet>
 
 		<Title>Interactive Brokers Flex Query Reader</Title>
-		<Authors>Josef Biehler (gabbersepp)</Authors>
+		<Authors>Josef Biehler (gabbersepp), Christian Günther (tradez-net)</Authors>
 		<Description>Easily read any flex query. Provides the whole data model.</Description>
-		<Copyright>Josef Biehler (gabbersepp)</Copyright>
-		<PackageProjectUrl>https://github.com/gabbersepp/ib-flex-reader</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/gabbersepp/ib-flex-reader</RepositoryUrl>
+		<Copyright>Josef Biehler (gabbersepp), Christian Günther (tradez-net)</Copyright>
+		<PackageProjectUrl>https://github.com/Tradez-net/ib-flex-reader</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/Tradez-net/ib-flex-reader</RepositoryUrl>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
-		<Version>2.6.0</Version>
+		<Version>2.7.0</Version>
 
 		<TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
+
+		<PackageId>TradezNet.IbFlexReader</PackageId>
+
+		<PackageLicenseUrl></PackageLicenseUrl>
+
+		<PackageTags>Ib, Interactive Broker, Trading, FlexQuery</PackageTags>
+
+		<AssemblyName>TradezNet.IbFlexReader</AssemblyName>
+
+		<RootNamespace>TradezNet.IbFlexReader</RootNamespace>
+
+		<Product>TradezNet.IbFlexReader</Product>
+
+		<AssemblyVersion>2.7.0</AssemblyVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(BuildingInsideVisualStudio)' != 'true'">

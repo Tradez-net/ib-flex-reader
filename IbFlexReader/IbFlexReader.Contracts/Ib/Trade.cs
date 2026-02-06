@@ -138,7 +138,7 @@
 
         public string ClearingFirmID { get; set; }
 
-        public string TransactionID { get; set; }
+        public long TransactionID { get; set; }
 
         public BuySell? BuySell { get; set; }
 
@@ -195,7 +195,7 @@
         public string IssuerCountryCode { get; set; }
         public string Rtn { get; set; }
         public string InitialInvestment { get; set; }
-        
+
         //public string DeliveringBroker { get; set; }
         public string RelatedTradeID { get; set; }
         public string OrigTransactionID { get; set; }

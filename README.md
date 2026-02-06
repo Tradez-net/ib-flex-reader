@@ -71,5 +71,8 @@ Future enhancements and TODOs:
 
 Contributions are welcome!
 
+## Thanks to 
+- https://github.com/clifton/ib-flex for many FlexQuery testfiles
+
 
 

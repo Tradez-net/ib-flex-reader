@@ -79,6 +79,7 @@
     <Compile Include="ReaderTests.cs" />
     <Compile Include="XmlFileTest\TestFileHelper.cs" />
     <Compile Include="XmlFileTest\TestFileHelperTests.cs" />
+    <Compile Include="XmlFileTest\XmlFileTests.cs" />
     <Compile Include="Utils\DumpFileWriterTest.cs" />
     <Compile Include="Xml\TradeTest.cs" />
     <Compile Include="Xml\XmlTest.cs" />
@@ -107,6 +108,60 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="XmlFileTest\TestFiles\activity_backfill.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlFileTest\TestFiles\activity_bonds.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlFileTest\TestFiles\activity_cancelled_trades.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlFileTest\TestFiles\activity_cash.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlFileTest\TestFiles\activity_cfds.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlFileTest\TestFiles\activity_complex_corporate_actions.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlFileTest\TestFiles\activity_corporate_actions.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlFileTest\TestFiles\activity_daily_portfolio.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlFileTest\TestFiles\activity_extended.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlFileTest\TestFiles\activity_forex.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlFileTest\TestFiles\activity_fractional_shares.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlFileTest\TestFiles\activity_futures.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlFileTest\TestFiles\activity_minimal.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlFileTest\TestFiles\activity_options.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlFileTest\TestFiles\activity_simple.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlFileTest\TestFiles\activity_tbills.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlFileTest\TestFiles\activity_warrants.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlFileTest\TestFiles\kmi.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="XmlFileTest\TestFiles\StatementOfFunds.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -138,7 +138,7 @@
 
         public string ClearingFirmID { get; set; }
 
-        public long TransactionID { get; set; }
+        public long? TransactionID { get; set; }
 
         public BuySell? BuySell { get; set; }
 

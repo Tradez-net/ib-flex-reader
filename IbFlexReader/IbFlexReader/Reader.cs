@@ -26,6 +26,16 @@ namespace IbFlexReader
             sb = new StringStream();
         }
 
+        public FlexQueryResponse FromFile(string fullname)
+        {
+            var response =
+                GetByString(fullname, new Options
+                {
+                    UseXmlReader = true
+                });
+            return response;
+        }
+
         /// <summary>
         /// Converts a string to a FlexQueryResponse.
         /// </summary>

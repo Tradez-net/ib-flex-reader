@@ -73,7 +73,7 @@
                 {
                     if (errorObjects != null)
                     {
-                        var msg = $"error during casting field '{p.Name}' of '{typeFrom.Name}' with message: {e.Message} and stacktrace: {e.StackTrace}";
+                        var msg = $"error during casting field '{p.Name}' [Value: {p.GetValue(from)}] of '{typeFrom.Name}' with message: {e.Message} and stacktrace: {e.StackTrace}";
                         errorObjects.Add(new ErrorMessage
                         {
                             Message = msg,
@@ -129,6 +129,13 @@
 
             if (Nullable.GetUnderlyingType(type)?.IsEnum ?? false)
             {
+                // in the testdata this CashTransactionType occurs, but not
+                //  in my personal statements? hack
+                if (strVal == "Deposits & Withdrawals")
+                {
+                    strVal = "Deposits/Withdrawals";
+                }
+
                 return EnumParser.EnumParser.Parse(Nullable.GetUnderlyingType(type), strVal);
             }
 

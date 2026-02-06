@@ -17,12 +17,17 @@
 
         public string GetTestFilePath()
         {
-            string  ext = @"/IbFlexReader.Tests/bin/Release/XmlFileTest/TestFiles";
+            var exePath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            TestFilePath = Path.Combine(exePath, "XmlFileTest", "TestFiles");
 
-            var slnpath = GetSlnPath();
+            if (!Directory.Exists(TestFilePath))
+            {
+                // Fallback for cases where it's not in the output directory
+                string ext = @"/IbFlexReader.Tests/XmlFileTest/TestFiles";
+                var slnpath = GetSlnPath();
+                TestFilePath = Path.GetFullPath(slnpath + ext).Trim();
+            }
 
-            TestFilePath = Path.GetFullPath(slnpath + ext).Trim();
-            
             return TestFilePath;
         }
 
@@ -50,7 +55,7 @@
                 doc.Load(file);
                 XmlTestFiles.Add(doc);
             }
-            
+
             return XmlTestFiles;
         }
 

@@ -13,6 +13,10 @@
         Withholding871,
         [EnumName("Dividends")]
         Dividends,
+        [EnumName("Realized P/L")]
+        RealizedPL,
+        [EnumName("Cash Receipts")]
+        CashReceipts,
         [EnumName("Payment In Lieu Of Dividends")]
         PaymentInLieuOfDividends,
         [EnumName("Broker Interest Paid")]
@@ -24,6 +28,8 @@
         [EnumName("Broker Interest Received")]
         BrokerInterestReceived,
         [EnumName("Bond Interest Received")]
-        BondInterestReceived
+        BondInterestReceived,
+        [EnumName("Bond Interest")]
+        BondInterest
     }
 }

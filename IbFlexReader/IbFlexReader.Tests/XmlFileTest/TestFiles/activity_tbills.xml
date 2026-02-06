@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<FlexQueryResponse queryName="Activity" type="AF">
+  <FlexStatements count="1">
+    <FlexStatement accountId="U1234567" fromDate="20250115" toDate="20250115"
+                   period="LastBusinessDay" whenGenerated="20250115;150000">
+      <!-- Treasury Bill trades (maturity < 1 year) -->
+      <Trades>
+        <!-- Buy T-Bill -->
+        <Trade accountId="U1234567"
+               conid="567890123"
+               symbol="912796ZX9"
+               description="US TREASURY BILL 04/24/25"
+               assetCategory="BILL"
+               tradeDate="20250115"
+               settleDateTarget="20250116"
+               buySell="BUY"
+               quantity="10000"
+               price="99.85"
+               proceeds="-9985.00"
+               ibCommission="0.00"
+               netCash="-9985.00"
+               cost="-9985.00"
+               currency="USD"
+               fxRateToBase="1.0"
+               accruedInt="0.00" />
+      </Trades>
+
+      <!-- T-Bill positions -->
+      <OpenPositions>
+        <OpenPosition accountId="U1234567"
+                      conid="567890123"
+                      symbol="912796ZX9"
+                      description="US TREASURY BILL 04/24/25"
+                      assetCategory="BILL"
+                      position="10000"
+                      markPrice="99.90"
+                      positionValue="9990.00"
+                      costBasisPrice="99.85"
+                      costBasisMoney="9985.00"
+                      percentOfNAV="33.3"
+                      fifoPnlUnrealized="5.00"
+                      currency="USD"
+                      fxRateToBase="1.0"
+                      reportDate="20250115" />
+      </OpenPositions>
+
+      <!-- T-Bill maturity -->
+      <CorporateActions>
+        <CorporateAction accountId="U1234567"
+                        conid="567890123"
+                        symbol="912796ZX9"
+                        description="US TREASURY BILL 04/24/25"
+                        assetCategory="BILL"
+                        actionType="TC"
+                        type="TC"
+                        dateTime="20250424"
+                        reportDate="20250424"
+                        quantity="10000"
+                        proceeds="10000.00"
+                        value="10000.00"
+                        currency="USD"
+                        fxRateToBase="1.0" />
+      </CorporateActions>
+    </FlexStatement>
+  </FlexStatements>
+</FlexQueryResponse>

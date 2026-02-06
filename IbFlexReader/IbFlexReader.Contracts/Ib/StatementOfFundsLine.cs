@@ -18,6 +18,7 @@
         public Currencies? Currency { get; set; }
         public string Cusip { get; set; }
         [Format(Constants.DateFormat)]
+        [Format(Constants.DateTimeFormat)]
         public DateTime? Date { get; set; }
         public double? Debit { get; set; }
         public string Description { get; set; }

@@ -58,7 +58,7 @@
         //Note: The reportDate XML attribute may contain either a date or a string, i.e. reportDate="MULTI"
         public string ReportDate { get; set; }
 
-        public int? Position { get; set; }
+        public double? Position { get; set; }
 
         public double? MarkPrice { get; set; }
 

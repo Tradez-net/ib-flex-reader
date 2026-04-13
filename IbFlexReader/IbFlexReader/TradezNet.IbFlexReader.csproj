@@ -21,7 +21,7 @@
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
-		<Version>2.7.0</Version>
+		<Version>2.8.0</Version>
 
 		<TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
 
@@ -37,7 +37,7 @@
 
 		<Product>TradezNet.IbFlexReader</Product>
 
-		<AssemblyVersion>2.7.0</AssemblyVersion>
+		<AssemblyVersion>2.8.0</AssemblyVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(BuildingInsideVisualStudio)' != 'true'">
